@@ -21,4 +21,5 @@
  <p>Isto está apenas no inicio</p>
  <P> Bora codar com Godot </p>
 
-## Meus agradecimentos a plataforma @Digital Innovation One junto com grupo @Santander que estão sempre me apoiando... 
+### Meus agradecimentos a plataforma @Digital Innovation One  junto com grupo @Santander que estão sempre me apoiando... 
+### Agradecimento especial instrutor @Rafa Skoberg pelas aulas incriveis
