@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp3a8oje7kq0r"]
+
+[ext_resource type="Texture2D" uid="uid://3nueokh7ta3q" path="res://assets/tyni-swords/Resources/Trees/Tree.png" id="1_0iuib"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfhdk"]
+size = Vector2(14.4777, 27.1229)
+
+[node name="Arvore" type="StaticBody2D"]
+y_sort_enabled = true
+
+[node name="Tree" type="Sprite2D" parent="."]
+scale = Vector2(0.758088, 0.758088)
+texture = ExtResource("1_0iuib")
+region_enabled = true
+region_rect = Rect2(10.0001, 0, 173, 192.623)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 46.7765)
+scale = Vector2(0.759791, 0.942121)
+shape = SubResource("RectangleShape2D_vfhdk")
