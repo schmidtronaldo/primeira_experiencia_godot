@@ -1,7 +1,8 @@
-[gd_scene load_steps=25 format=3 uid="uid://dks7yhymmwacm"]
+[gd_scene load_steps=27 format=3 uid="uid://dks7yhymmwacm"]
 
 [ext_resource type="Texture2D" uid="uid://b0mpaigumab4e" path="res://assets/tyni-swords/Terrain/Ground/Tilemap_Flat.png" id="1_k43t7"]
 [ext_resource type="Texture2D" uid="uid://rn5tn58hui7j" path="res://assets/tyni-swords/Terrain/Ground/Shadows.png" id="1_pe4gx"]
+[ext_resource type="Script" path="res://world.gd" id="1_rvoip"]
 [ext_resource type="Texture2D" uid="uid://btveew4h7d4yf" path="res://assets/tyni-swords/Terrain/Ground/Tilemap_Elevation.png" id="2_5pwiw"]
 [ext_resource type="Texture2D" uid="uid://cqrdplmy8caeo" path="res://assets/tyni-swords/Terrain/Water/Water.png" id="4_yiwbn"]
 [ext_resource type="Texture2D" uid="uid://8ee6vubu8l41" path="res://assets/tyni-swords/Terrain/Bridge/Bridge_All.png" id="5_w7svf"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bjmehenfevfg5" path="res://player/player.tscn" id="9_v6wjq"]
 [ext_resource type="PackedScene" uid="uid://bclwr456rjv3k" path="res://enemies/enemies.tscn" id="10_fkpqh"]
 [ext_resource type="PackedScene" uid="uid://dp3a8oje7kq0r" path="res://objetos/arvore.tscn" id="11_fdm22"]
+[ext_resource type="AudioStream" uid="uid://qruf8tr7xith" path="res://sfx/world/bgMusic.mp3" id="12_ovooq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_std6e"]
 texture = ExtResource("1_pe4gx")
@@ -149,6 +151,7 @@ size = Vector2(38.7862, 52.4297)
 
 [node name="world" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_rvoip")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_wveqc")
@@ -222,6 +225,33 @@ position = Vector2(1280, 447)
 y_sort_enabled = true
 position = Vector2(233, 154)
 
-[node name="Enemies" parent="." instance=ExtResource("10_fkpqh")]
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_ovooq")
+volume_db = -10.0
+
+[node name="enemies" type="Node2D" parent="."]
 y_sort_enabled = true
-position = Vector2(952, 470)
+
+[node name="Enemies" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(1006, 344)
+
+[node name="Enemies2" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(-180, 400)
+
+[node name="Enemies3" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(1841, 72)
+
+[node name="Enemies4" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(715, -309)
+
+[node name="Enemies5" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(-6, -821)
+
+[node name="Enemies6" parent="enemies" instance=ExtResource("10_fkpqh")]
+y_sort_enabled = true
+position = Vector2(1517, -741)

@@ -1,12 +1,14 @@
+    > Assets by :
+	 	<@>https://pixelfrog-assets.itch.io/tiny-swords</a>
 
-	> ataque.mp3
+	> Ataque.mp3
 	Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=44658">Pixabay</a>
 
-	> sword.mp3
+	> Sword.mp3
 
 	Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=7160">Pixabay</a>
 
-	> correndo.mp3
+	> Correndo.mp3
 	Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6237">Pixabay</a>
 
 	> bgMusic
